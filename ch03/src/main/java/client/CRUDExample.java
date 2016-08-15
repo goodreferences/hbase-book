@@ -23,6 +23,7 @@ public class CRUDExample {
   public static void main(String[] args) throws IOException {
     // vv CRUDExample
     Configuration conf = HBaseConfiguration.create();
+    conf.set("hbase.zookeeper.quorum","ip-172-31-42-105.eu-west-1.compute.internal");
 
     // ^^ CRUDExample
     HBaseHelper helper = HBaseHelper.getHelper(conf);
